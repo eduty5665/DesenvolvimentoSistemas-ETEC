@@ -1,0 +1,22 @@
+//C++ Code
+
+ 
+
+void setup ()
+{
+
+ 
+
+}
+
+ 
+
+ 
+
+void loop() {
+  for (int i = 10; i >= 7; i--) {
+  digitalWrite(i, HIGH);
+    delay(1000);
+  digitalWrite(i, LOW);
+  }
+}

@@ -1,0 +1,25 @@
+//Projeto 9 – Escrever uma mensagem no display LCD 16 x 2
+#include <LiquidCrystal.h> //Inclusão da Biblioteca
+LiquidCrystal lcd(12, 11, 10, 5, 4, 3, 2);
+
+int backLight = 13;// pino 13 responsável pelo controle do LED
+
+void setup(){
+  pinMode(backLight, OUTPUT);
+  digitalWrite(backLight, HIGH);// Liga backlight. Substituir 'HIGH' por 'LOW' para desligar a luz de fundo.
+
+  lcd.begin(16, 2);//Colunas, linhas. Use 16,2 para display LCD 16x2
+  lcd.clear();// Inicializa o display com uma tela vazia
+  lcd.setCursor(0, 0);//Posiciona o cursor na coluna 0, linha 0 (primeira linha)
+  lcd.print("Eduardo Lemes");//Escreve o texto desejado
+
+  lcd.setCursor(0, 1);//Posiciona o cursor para a coluna 0, linha 1 (segunda linha)
+  lcd.print("UFAAAAA, GGEASY");
+  Serial.begin(9600);//Inicializa a comunicação serial em 9600 bits por segundo
+}
+void loop(){
+  delay(1000);
+  lcd.noDisplay();// Desliga Display:
+  delay(500);
+  lcd.display();// Liga Display:
+}

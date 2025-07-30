@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Sarala&display=swap');
+/*    font-family: 'Oswald', sans-serif; 
+      font-family: 'Sarala', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body{
+
+    height: 100%;
+    background-color: black;
+   
+}
+
+.header-main{
+    display: flex;
+    justify-content: center;
+}
+
+.logoHeader{
+    width: 250px;
+    height: 100px;
+}
+
+.contents-main{
+    margin-top: 5%;
+    margin-bottom: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.background-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5d5d5;
+    align-content: center;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 18px;
+
+}
+
+.main-login{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    align-content: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.inputs{
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 50px;
+}
+
+.text-login{
+    text-align: center;
+}
+
+.div-inputs{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.input-logado{
+    margin: 10px;
+}
+
+.botao-login{
+    background-color: #161515;
+    width: 180px;
+    height: 60px;
+    border-radius: 18px;
+    font-family: 'Oswald', sans-serif;
+    color: #d5d5d5;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0,0,0,0.25);
+    font-size: 24px;
+}
+
+.botao-login:hover{
+    background-color: rgb(32, 32, 32);
+    transform: scale(1.1,1.1);
+    transition: all 0.5s;
+}
+
+.div-registro{
+    margin: 10px;
+}
+/*
+.esqueciSenha:hover{
+    color: rgb(112, 112, 112);
+    text-decoration: underline;
+    transform: scale(1.1,1.1);
+    transition: all 0.5s;
+}
+*/
+a {
+    position: relative;
+    color: #000000;
+    text-decoration: none;  
+  }
+  
+a:before {
+content: "";
+position: absolute;
+width: 100%;
+height: 3px;
+bottom: 0;
+left: 0;
+background-color: #000000;
+visibility: hidden;
+-webkit-transform: scaleX(0);
+transform: scaleX(0);
+-webkit-transition: all 0.3s ease-in-out 0s;
+transition: all 0.3s ease-in-out 0s;
+
+}
+
+
+a:hover:before {
+visibility: visible;
+-webkit-transform: scaleX(1);
+transform: scaleX(1);
+
+}
+
+a:hover{
+    color: blue;
+}
+
+.esqueciSenha{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    align-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
