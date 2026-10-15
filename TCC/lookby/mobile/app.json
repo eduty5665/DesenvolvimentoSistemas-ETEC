@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "LookBy",
+    "slug": "lookby",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "br.etec.lookby"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#333333",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "br.etec.lookby"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180,
+          "backgroundColor": "#333333"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "O LookBy usa suas fotos para você escolher a foto de perfil."
+        }
+      ]
+    ],
+    "scheme": "lookby",
+    "backgroundColor": "#333333"
+  }
+}
